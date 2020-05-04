@@ -21,6 +21,14 @@
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
   <link href="css/clean-blog.min.css" rel="stylesheet">
+  <style>
+    .img-fluid {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  </style>
 
 </head>
 
@@ -63,10 +71,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Usability Test for Etsy</h1>
+            <h1>Mobile Usability Test for Etsy</h1>
             <span class="meta">Posted by
               <a href="#">John Hu</a>
-              on April 26, 2020</span>
+              on May 3, 2020</span>
           </div>
         </div>
       </div>
@@ -80,11 +88,10 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <h2 class="section-heading mt-1">Introduction</h2>
           <p>
-            The primary purpose of my usability test was to test the searching and filtering
-            features of Etsy. My method was to give my three participants three
-            tasks involving different items to search for, prioritizing different aspects. They were asked to
-            articulate their thought process as they browsed the website, and to limit their use of the search
-            bar as much as possible. The three tasks were as follows:
+            As a follow-up to previous week's usability analysis, I have tailored the same test for mobile devices. Once
+            again, I am testing the search features of Etsy to determine how effectively one can find items based on
+            ratings and price. The main goal is to discover usability issues that are unique to mobile devices. The
+            three tasks given to test participants were:
           </p>
           <ol>
             <li>You are on a tight budget and you need at least 10 face masks of any type.</li>
@@ -92,71 +99,70 @@
               option.</li>
             <li>You are looking for a birthday present for a friend who likes gardening.</li>
           </ol>
-          <p>The demographic summary of my participants:
+          <p>
+            The three participants ranged from young adult to middle age and all use the internet between 30-80 hours a
+            week. They were guided through the tests with a screen and voice recorder.
           </p>
-
-          <ol>
-            <li>54 year old female business manager who spends roughly 40 hours a week online.</li>
-            <li>54 year old male lawyer who spends roughly 60 hours a week online.</li>
-            <li>15 year old male student who spends roughly 85 hours a week online.</li>
           </ol>
-          <a href="img/test-script-etsy.pdf" download>Link to Test Script</a>
+          <a href="img/test-script-etsy-mobile.pdf" download><u>Link to Test Script</u></a>
           <h2 class="section-heading">The Home Page</h2>
           <p>
-            Etsy as a whole did not prove to have many usability issues that I could visibly see prior to testing. The
-            design and UI design appeared modern and simplistic upon participants' first viewing. Large amounts of white
-            space and muted colors made for pleasant browsing. It's apparent based on the photos and layout what the
-            purpose and target audience was, without too much reading of text.
+            Fortunately, the mobile version of the site did not appear to have noticeable usability issues from the
+            outset. In general, the mobile site is more condensed and not as spread out as on desktop. This reduces the
+            white space which gave the desktop site a more pleasant feel. The content is generally the same, although
+            the "popular" items section was omitted.
           </p>
 
-          <img class="img-fluid" src="img/etsy-home.JPG" alt="">
-          <span class="caption">"intuitive", "clean", "pretty" were popular terms to describe the front page</span>
+          <img class="img-fluid" src="img/etsy-mobilehome.JPG" alt="">
+          <span class="caption">The site seems to get its message across more effectively like this</span>
 
           <h2 class="section-heading">Results</h2>
-          <p>A couple of usability issues did turn up over the course of the tasks. Every one of the
-            participants took note of the plethora of choices and options that are available to varying acceptance. The
-            youngest enjoyed the options, whereas the older participants noted their preference for better curation and
-            filtering capabilities when browsing without the search bar.
-          </p>
-          
-          <img class="img-fluid" src="img/etsy-choices.JPG" alt="">
-          <span class="caption">For a site selling general merchandise, Etsy does look a little cluttered</span>
-          <p>Notably, the "Sort by" button was not immediately noticeable to participants on the browser based site.
-            It is debatable whether this was because of the lack of need to use it or because of poor design, but it did
-            take a while for it to be discovered when it was needed. Additionally, on the mobile version of the site,
-            there was no option to sort by "Top Customer Reviews", which prevented easy completion of the second task.
-          </p>
-          <img class="img-fluid" src="img/no-ratings-filter.JPG" alt="">
-          <span class="caption">"Relevancy" also might not be the clearest criteria for sorting</span>
           <p>
-            The second issue was that the quantity selection was not readily available until the checkout page. This 
-            was not a big issue for most of the participants, but it did add some uncertainty for items that 
-            people might want to buy in bulk.
+            Although usability problems were not apparent from the outset, I could tell that the oldest participant was
+            a little overwhelmed by the thought of searching without the search bar. She was not aware of the hamburger
+            button
+            toggle for product category menus, and elected to using links on the front page to find what she was looking
+            for.
           </p>
-          
-          <img class="img-fluid" src="img/checkout.JPG" alt="">
-          <span class="caption">It might seem obvious that no quantity selection equals "1", but the lack of clarity
-            can be a big deal for penny pinchers
-          </span>
+
+          <img class="img-fluid" src="img/etsy-homechoices.jpg" alt="">
+          <span class="caption">The mobile site omits the Popular items but includes the "Editors' Picks" labels</span>
+          <p>
+            Similar to the desktop browser test, the filter button took a while to find. However, when it was found, it
+            was decently useful to one participant. This participant pressed a "Gas mask card" on task 1 because it was
+            the cheapest, but probably didn't look at the picture or name clearly. The name was largely obscured due to
+            reduced screen real estate. There was also no easy way to filter by face mask.
+          </p>
+          <img class="img-fluid" src="img/gasmaskcard.JPG" alt="">
+          <span class="caption">Interesting how the user can be so focused on filtering their results that they gloss
+            over the image</span>
+          <p>
+            One general observation was that the home button was used much less, with participants more likely to press
+            forward or back arrows to navigate. This makes sense when one considers the longer page lengths. The user is
+            less likely to scroll back to the top to press the logo for home.
+          </p>
 
           <h2 class="section-heading">Conclusion</h2>
           <p>
-            Of all the findings from this usability test, a couple stood out that was shared by all participants. Every
-            participant encountered some issue with either finding or utilizing the sorting feature effectively. The
-            second common issue was that all participants appeared to be affected in some way by how much there was to
-            look at. Although this might have been related to the design of the tasks themselves (perhaps too
-            unspecific?), or the limitations in using the search bar, I still noticed several hints of participants 
-            being slightly overwhelmed by the amount of options.
+            Through this round of tests, I was able to observe a few similarities and differences between the desktop
+            and mobile usability. Firstly, I could see that participants were similarly aware of the amount of options,
+            but seemed to be less emotionally affected by them. The filtering features also similarly took a while to
+            find, but when found, they were used more effectively as it replaced the left sidebar on the desktop site.
+            There was less dependence on the home button, but also reduced likelihood of scrolling to the very bottom.
           </p>
-          
-          <h2 class="section-heading">Moving Forward</h2>
+          <img class="img-fluid" src="img/etsy-filter.JPG" alt="">
+          <span class="caption">This category menu is surprisingly more useful on mobile</span>
           <p>
-            I would propose more testing with revised tasks that are designed based on what I've learned from the
-            results. I would make the tasks more detailed so that there is a clearer sense of what to find. Finally, I
-            would test both the desktop and mobile version of the site for all participants. This would help determine
-            the effectiveness of particular design elements, as well as observing the general differences in user
-            experience between the two.
-          </p>
+
+            <h2 class="section-heading">Suggestion</h2>
+            <p>
+              What I found was that the problems that occurred were largely related to screen real estate. Because
+              products are listed in two columns instead of four, users could focus on the images a little
+              better and therefore navigate more easily using just images. However, this also makes the user a bit less in touch with the hierarchy and
+              feel less in control of the navigation. Improving the experience on mobile won't be easy due to such
+              constraints, but if navigational elements were clarified in a way, I could see how general users can
+              benefit.
+            </p>
         </div>
       </div>
     </div>
