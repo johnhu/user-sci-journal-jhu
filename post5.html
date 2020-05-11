@@ -26,6 +26,9 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      width: 100%;
+    }
+    #logo {
       width: 50%;
     }
   </style>
@@ -53,40 +56,14 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post1.html">Post 1</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post2.html">Post 2</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post3.html">Post 3</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post4.html">Post 4</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post5.html">Post 5</a>
-            </div>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post6.html">Post 6</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post7.html">Post 7</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post8.html">Post 8</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post9.html">Post 9</a>
-            </div>
-            
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="post10.html">Post 10</a>
             </div>
           </li>
@@ -123,78 +100,59 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <h2 class="section-heading mt-1">Introduction</h2>
           <p>
-            
-          </p>
-          <ol>
-            <li>You are on a tight budget and you need at least 10 face masks of any type.</li>
-            <li>You are looking for your supplies for back to school/work, and you want the highest rated
-              option.</li>
-            <li>You are looking for a birthday present for a friend who likes gardening.</li>
-          </ol>
-          <p>
-            The three participants ranged from young adult to middle age and all use the internet between 30-80 hours a
-            week. They were guided through the tests with a screen and voice recorder.
-          </p>
-          </ol>
-          <a href="img/test-script-etsy-mobile.pdf" download><u>Link to Test Script</u></a>
-          <h2 class="section-heading">The Home Page</h2>
-          <p>
-            Fortunately, the mobile version of the site did not appear to have noticeable usability issues from the
-            outset. In general, the mobile site is more condensed and not as spread out as on desktop. This reduces the
-            white space which gave the desktop site a more pleasant feel. The content is generally the same, although
-            the "popular" items section was omitted.
+            <a href="wahealthplanfinder.org">Washington Health Plan Finder</a> is a website designed for low-income
+            Washington residents to easily find
+            health insurance plans through Apple Health.
+            Due to its large target audience, one would expect the website to be highly accessible for disabled and
+            marginalized citizens to be able to learn to use it without too much trouble.
           </p>
 
-          <img class="img-fluid" src="img/etsy-mobilehome.JPG" alt="">
-          <span class="caption">The site seems to get its message across more effectively like this</span>
-
-          <h2 class="section-heading">Results</h2>
+          <img id="logo" src="img/hpf-logo.png" alt="">
+          <h2 class="section-heading">Methodology</h2>
           <p>
-            Although usability problems were not apparent from the outset, I could tell that the oldest participant was
-            a little overwhelmed by the thought of searching without the search bar. She was not aware of the hamburger
-            button
-            toggle for product category menus, and elected to using links on the front page to find what she was looking
-            for.
+            I am using the Web Accessibility Evaluation Tool (WAVE) to scan the HTML markup and reach some conclusion
+            about the advantages and setbacks of the website based on knowledge of WCAG 2.1 guidelines.
           </p>
 
-          <img class="img-fluid" src="img/etsy-homechoices.jpg" alt="">
-          <span class="caption">The mobile site omits the Popular items but includes the "Editors' Picks" labels</span>
+          <h2 class="section-heading">The Surface</h2>
           <p>
-            Similar to the desktop browser test, the filter button took a while to find. However, when it was found, it
-            was decently useful to one participant. This participant pressed a "Gas mask card" on task 1 because it was
-            the cheapest, but probably didn't look at the picture or name clearly. The name was largely obscured due to
-            reduced screen real estate. There was also no easy way to filter by face mask.
+            From the get-go, we can tell that the website is designed in a considerate manner by having short-and-sweet
+            titles, a number of call-to-action buttons to navigate and a simple visual style.
           </p>
-          <img class="img-fluid" src="img/gasmaskcard.JPG" alt="">
-          <span class="caption">Interesting how the user can be so focused on filtering their results that they gloss
-            over the image</span>
+          <img class="img-fluid" src="img/wahealthplanfinder.JPG" alt="">
+          <h2 class="section-heading">Positives</h2>
           <p>
-            One general observation was that the home button was used much less, with participants more likely to press
-            forward or back arrows to navigate. This makes sense when one considers the longer page lengths. The user is
-            less likely to scroll back to the top to press the logo for home.
+            Looking through the WAVE results, I was able to detect 24 counts of alt text used on the home page alone.
+            There are also 36 Structural Elements, mostly consisting of unordered lists for navigational menus. This
+            shows consideration for those using screen readers who may need to cycle through these options.
           </p>
 
-          <h2 class="section-heading">Conclusion</h2>
+          <h2 class="section-heading">Negatives</h2>
           <p>
-            Through this round of tests, I was able to observe a few similarities and differences between the desktop
-            and mobile usability. Firstly, I could see that participants were similarly aware of the amount of options,
-            but seemed to be less emotionally affected by them. The filtering features also similarly took a while to
-            find, but when found, they were used more effectively as it replaced the left sidebar on the desktop site.
-            There was less dependence on the home button, but also reduced likelihood of scrolling to the very bottom.
+            There were 14 errors detected, although they were mostly broken ARIA references. 4 of them were low contrast
+            text. Using the WebAIM Color Contrast Checker, I found that the text had a contrast ratio of 3.37:1, which fails
+            WCAG AAA guidelines.
           </p>
-          <img class="img-fluid" src="img/etsy-filter.JPG" alt="">
-          <span class="caption">This category menu is surprisingly more useful on mobile</span>
-          <p>
+          <img class="img-fluid" src="img/low-contrast.JPG" alt="">
+          <p>  
+            There were also 35 Alerts, though most of these
+            were minor. Notably, the site has no headings whatsoever, and scanning through the HTML confirmed this. This
+            may not bode well for screen readers.
+          </p>
 
-            <h2 class="section-heading">Suggestion</h2>
-            <p>
-              What I found was that the problems that occurred were largely related to screen real estate. Because
-              products are listed in two columns instead of four, users could focus on the images a little
-              better and therefore navigate more easily using just images. However, this also makes the user a bit less in touch with the hierarchy and
-              feel less in control of the navigation. Improving the experience on mobile won't be easy due to such
-              constraints, but if navigational elements were clarified in a way, I could see how general users can
-              benefit.
-            </p>
+          <h2 class="section-heading">Recommendations</h2>
+          <p>
+            My first recommendation is to fix the low contrast text. This is the easiest change that would impact the
+            most people. Secondly, making sure there are headings properly placed in hierarchy. Lastly, I noticed the
+            language selection were found to be "redundant links", which initially made sense to me considering they
+            redirect to the same page.
+          </p>
+          <img class="img-fluid" src="img/redundant-links.JPG" alt="">
+          <p> Even though the nav element has a "navigation" attribute, it seems that the list
+            elements won't be read out due to being in different languages and not having alt text associated with them.
+            I would add an alt text in case screen readers aren't able to say that it's a language selection and/or
+            cycle through the language options.
+          </p>
         </div>
       </div>
     </div>
