@@ -104,7 +104,7 @@
             In an effort to bring accessible practices into reality, I have made it a project to evaluate the
             accessibility of my User Science Journal and implement accessibility features in response to this analysis.
           </p>
-          
+
           <h2 class="section-heading">Methodology</h2>
           <p>
             I am using the Web Accessibility Evaluation Tool (WAVE) and Lighthouse to scan and generate a score for the
@@ -116,49 +116,52 @@
 
           <h2 class="section-heading">Results</h2>
           <p>
-           After using both WAVE and Lighthouse, I was able to narrow down the main problems I saw: 
+            After using both WAVE and Lighthouse, I was able to narrow down the main problems I saw:
           <ul>
             <li>Contrast issues with the grey text on white background</li>
             <li>Social media icons have no alt text or links</li>
             <li>Performance has room for improvement (41 with Chrome Extensions enabled, 88 without)</li>
           </ul>
-          </p>   
+          </p>
           <img class="img-fluid" src="img/contrast1.JPG" alt="">
 
           <h2 class="section-heading">Implementation</h2>
           <p>
             The main tasks that I decided were of immediate concern:
-            <ul>
-              <li>Darken color of text with "post-meta" CSS class</li>
-              <li>Remove "text-muted" of copyright text</li>
-              <li>Get rid of icons with no links and add titles for screen reader</li>
-              <li>alt text to all images</li>
-            </ul>
+          <ul>
+            <li>Darken color of text with "post-meta" CSS class</li>
+            <li>Remove "text-muted" of copyright text</li>
+            <li>Get rid of icons with no links and add titles for screen reader</li>
+            <li>alt text to all images</li>
+          </ul>
           </p>
 
           <img class="img-fluid" src="img/post-meta.JPG" alt="">
           <h2 class="section-heading">Challenges</h2>
           <p>
             The main challenge I faced was making sure I was targeting the right areas that would lead to the best
-            result. Improving performance was also a step up in difficulty in the sense of knowing exactly which
-            aspects of CSS or JS to alter to boost the performance. My main contribution was adding "async" to script tags,
-            https://web.dev/render-blocking-resources/
+            result. Improving performance was also a step up in difficulty in the sense of knowing exactly which aspects
+            of CSS or JS to alter to boost the performance. I may need specialized tools for it as it's a bit beyond my
+            skill level. But at least I was able to bump "Accessibility" up to 100, from 92 on Lighthouse, and run into 
+            zero errors using WAVE.
           </p>
-          
+
           <img class="img-fluid" src="img/skipped-h.JPG" alt="">
           <span class="caption">These skipped headings were a bit tricky to spot</span>
-   
 
           <h2 class="section-heading">Bootstrap and Accessibility</h2>
           <p>
             It is debatable whether Bootstrap really has a negative influence on accessibility. From what I can tell,
             Bootstrap is a great tool for efficiently building HTML and CSS based websites that are responsive.
-            As a result it is a positive for building websites where visual coherence and clarity is a concern for the viewer.
-            If there is any significant barrier to accessibility with Bootstrap, it might be the performance hit that can happen
-            as a result of unnecessary style sheets. Apart from this, I can see Bootstrap being used effectively alongside
+            As a result it is a positive for building websites where visual coherence and clarity is a concern for the
+            viewer.
+            If there is any significant barrier to accessibility with Bootstrap, it might be the performance hit that
+            can happen
+            as a result of unnecessary style sheets. Apart from this, I can see Bootstrap being used effectively
+            alongside
             assistive technologies.
           </p>
-            <code>
+          <code>
 
             </code>
           </p>
