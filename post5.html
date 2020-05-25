@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163411767-1"></script>
-   <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-   
-     gtag('config', 'UA-163411767-1');
-   </script>  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163411767-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163411767-1');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -37,6 +37,7 @@
       margin-right: auto;
       width: 100%;
     }
+
     #logo {
       width: 50%;
     }
@@ -139,11 +140,12 @@
           <h2 class="section-heading">Negatives</h2>
           <p>
             There were 14 errors detected, although they were mostly broken ARIA references. 4 of them were low contrast
-            text. Using the WebAIM Color Contrast Checker, I found that the text had a contrast ratio of 3.37:1, which fails
+            text. Using the WebAIM Color Contrast Checker, I found that the text had a contrast ratio of 3.37:1, which
+            fails
             WCAG AAA guidelines.
           </p>
           <img class="img-fluid" src="img/low-contrast.JPG" alt="low contrast text banner, image">
-          <p>  
+          <p>
             There were also 35 Alerts, though most of these
             were minor. Notably, the site has no headings whatsoever, and scanning through the HTML confirmed this. This
             may not bode well for screen readers.
@@ -156,7 +158,8 @@
             language selection were found to be "redundant links", which initially made sense to me considering they
             redirect to the same page.
           </p>
-          <img class="img-fluid" src="img/redundant-links.JPG" alt="language selection links marked as redundant, image">
+          <img class="img-fluid" src="img/redundant-links.JPG"
+            alt="language selection links marked as redundant, image">
           <p> Even though the nav element has a "navigation" attribute, it seems that the list
             elements won't be read out due to being in different languages and not having alt text associated with them.
             I would add an alt text in case screen readers aren't able to say that it's a language selection and/or
