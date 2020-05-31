@@ -30,6 +30,17 @@
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
   <link href="css/clean-blog.min.css" rel="stylesheet">
+  <style>
+    .img-fluid {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #logo {
+      width: 50%;
+    }
+  </style>
 
 </head>
 
@@ -81,10 +92,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Analysis of Open Food Facts</h1>
+            <h1>Goals and Funnels</h1>
             <span class="meta">Posted by
               <a href="#">John Hu</a>
-              on April 1, 2019</span>
+              on May 30, 2020</span>
           </div>
         </div>
       </div>
@@ -96,69 +107,45 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          
           <h2 class="section-heading mt-1">Introduction</h2>
-          <p>As I searched for open-source development projects, I found a non-profit with a colorful look, but an imperfect
-            design.
+          <p>
+            As a second stage to my initial set-up of Google Analytics, I am now thinking about goals and the particular
+            behaviors I want to track on this site. The goal I chose is visiting at least 5 different pages.
           </p>
-          <p>It is Open Food Facts, a database of global food products.</p>
-          <a href="https://world.openfoodfacts.org/">
-            <img class="img-fluid" src="img/openfoodfacts-logo.png" alt="Open Food Facts Logo">
-          </a>
-          <h2 class="section-heading">Clutter</h2>
-          <h3 class="subheading">Are there distractions that makes scanning difficult?</h4>
 
-            <p>Visually it is fairly busy but not overwhelming.
-              While there are no unrelated ads, the placement of various graphics and text make it difficult to hone in
-              on important information.
-              Most notably, there are repeated elements, for example, their donation banner, introductory text, and "get
-              app".
-              Similar language on the page adds cognitive load and makes the user question if the information is the
-              same or not.
-            </p>
-            <img class="img-fluid" src="img/clutter.JPG"
-              alt="Three donation requests and 2 repeated introductions on home page">
-            <img class="img-fluid" src="img/getapp.JPG" alt="Get the app button, image">
-            <img class="img-fluid" src="img/installapp.JPG" alt="multiple app install buttons, image">
-
-            <h2 class="section-heading">Usability</h2>
-            <h3 class="subheading">Is it pleasant to use and navigate?</h4>
-
-              <p>Buttons and graphics mostly lead to expected results. The checkmark for hiding the banner is a nice
-                touch.
-                The country button however is a usability flaw, as once you have selected a country, you're unsure of
-                how to switch it back to the default "world" setting.
-                Clicking the home button doesn't work, so the only way is to re-enter the URL.
-              </p>
-              <img class="img-fluid" src="img/country.JPG" alt="country selection menu, image">
-              <img class="img-fluid" src="img/country-selected.JPG" alt="selected country selection menu, image">
-
-              <h2 class="section-heading">Architecture</h2>
-              <h3 class="subheading">Is the site organized effectively?</h4>
-                <p> The navigation bar is adequate for navigation, and the home button works as intended.
-                  However, the main function of the website (searching for products), is not front and center.
-                  There are options for contributing to the website (sign in, add a product), as well as options for
-                  discovering content.
-                  More options on one page doesn't necessarily mean more efficiency for the user.
-                </p>
-                <img class="img-fluid" src="img/upbar.JPG" alt="image of top toolbar">
-                <img class="img-fluid" src="img/leftbar.JPG" alt="image of left sidebar">
-
-                <h2 class="section-heading">Ambiguity</h2>
-                <h3 class="subheading">Is there language that makes the user uncertain?</h4>
-                  <p>Besides the country selection, there is also the "sign in" on the left sidebar.
-                    It states that you need to sign in to add or edit products, but the "add a product"
-                    is also below it. It is uncertain whether you need to log-in before you add a product.
-                  </p>
-
-                  <h2 class="section-heading">Suggestions</h2>
-                  <p>Clutter - Do not repeat similar elements. Try to integrate text that sound similar. For example,
-                    the introductory text could be in one paragraph instead of separate areas of the page.</p>
-                  <p>Usability - Redirect the home button so it leads back to the "world" page.</p>
-                  <p>Architecture - Could re-design the webpage to center around the search function.</p>
-                  <p>Ambiguity - More clarity about the incentives of signing up and what is required to add/edit
-                    products.</p>
-
+          <h2 class="section-heading">Process</h2>
+          <p>
+            My set up process of Goals was fairly straightforward. I began by navigating to Admin > Goals. I selected
+            "New Goal" and chose Custom in step 1.
+          </p>
+          <img class="img-fluid" src="img/admin-goals.JPG" alt="">
+          <p>
+            In step 2, I wrote the name of the goal (pages visited), setting the Type to "Pages/Screens per session". I
+            then set it to greater than 5 to assign the goal that the user will need to visit at least 5 pages.
+          </p>
+          <img class="img-fluid" src="img/goal-steps.JPG" alt="">
+          <h2 class="section-heading"> Presentation</h2>
+          <p>
+            Since the goal is not something that can be easily communicated to general users, I am
+            treating it as an imaginary job, as if higher page counts will lead to greater revenue.
+          </p>
+          <p>
+            Luckily the basic design of the website is simple and clear enough that users can easily find and browse the
+            other pages.
+          </p>
+          <p>
+            In an effort to polish the comprehensibility of the site, I replaced the lorem ipsum on the "About"
+            page with a basic description so that any curious visitor may have a better context and greater likelihood
+            to visit more pages.
+          </p>
+          <img class="img-fluid" src="img/aboutpage.JPG" alt="">
+          
+          <h2 class="section-heading"> Funnels</h2>
+          <p>
+            Prior to implementing the "pages visited" goal, I made destination goals for two of my posts. The only requirement
+            was to visit those pages, and I set the funnel to "index.html", the home page.
+          </p>
+          <img class="img-fluid" src="img/funnel.JPG" alt="">
         </div>
       </div>
     </div>
