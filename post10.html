@@ -35,6 +35,9 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    #logo {
       width: 50%;
     }
   </style>
@@ -61,7 +64,6 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="post1.html">Post 1</a>
               <a class="dropdown-item" href="post1.html">Post 1</a>
               <a class="dropdown-item" href="post2.html">Post 2</a>
               <a class="dropdown-item" href="post3.html">Post 3</a>
@@ -90,10 +92,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Mobile Usability Test for Etsy</h1>
+            <h1>Goal Experiment Summary</h1>
             <span class="meta">Posted by
               <a href="#">John Hu</a>
-              on May 3, 2020</span>
+              on June 14, 2020</span>
           </div>
         </div>
       </div>
@@ -107,81 +109,54 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <h2 class="section-heading mt-1">Introduction</h2>
           <p>
-            As a follow-up to previous week's usability analysis, I have tailored the same test for mobile devices. Once
-            again, I am testing the search features of Etsy to determine how effectively one can find items based on
-            ratings and price. The main goal is to discover usability issues that are unique to mobile devices. The
-            three tasks given to test participants were:
+            For the past month, I have been evaluating accessibility, applying analytics, and optimizing for goal
+            conversion for my user science journal. Among the many options in the Admin page of Google Analytics there
+            was Goals, in which I chose the goal of letting the user visit 5 unique pages. The idea was that more page
+            views in a blog typically means greater revenue. I wanted a quantifiable picture of user engagement.
           </p>
-          <ol>
-            <li>You are on a tight budget and you need at least 10 face masks of any type.</li>
-            <li>You are looking for your supplies for back to school/work, and you want the highest rated
-              option.</li>
-            <li>You are looking for a birthday present for a friend who likes gardening.</li>
-          </ol>
           <p>
-            The three participants ranged from young adult to middle age and all use the internet between 30-80 hours a
-            week. They were guided through the tests with a screen and voice recorder.
-          </p>
-          </ol>
-          <a href="img/test-script-etsy-mobile.pdf" download><u>Link to Test Script</u></a>
-          <h2 class="section-heading">The Home Page</h2>
-          <p>
-            Fortunately, the mobile version of the site did not appear to have noticeable usability issues from the
-            outset. In general, the mobile site is more condensed and not as spread out as on desktop. This reduces the
-            white space which gave the desktop site a more pleasant feel. The content is generally the same, although
-            the "popular" items section was omitted.
+            Eventually I figured that a content experiment was in order. I started a "new experience" using Google
+            Optimize (which carried with it a slight learning curve), choosing an A/B Test between the original and a
+            new Variant. I made a few changes that appeared minor on the surface but that I thought would impact the
+            user experience. After a week of running the experiment, there appeared to be little evidence of any clear
+            winner. What I did notice was that the goal conversion was fluctuating since I made the changes, compared to
+            zero conversions in the week prior.
+            As I had little knowledge of what to expect, I decided to be skeptical in my reading of these results.
           </p>
 
-          <img class="img-fluid" src="img/etsy-mobilehome.JPG" alt="Etsy mobile home page, image">
-          <span class="caption">The site seems to get its message across more effectively like this</span>
-
-          <h2 class="section-heading">Results</h2>
+          <h2 class="section-heading">Informal Usability Test</h2>
           <p>
-            Although usability problems were not apparent from the outset, I could tell that the oldest participant was
-            a little overwhelmed by the thought of searching without the search bar. She was not aware of the hamburger
-            button
-            toggle for product category menus, and elected to using links on the front page to find what she was looking
-            for.
+            Since I could not reach a clear conclusion based on the data alone, I decided to do an additional usability
+            test. This test involved the user accessing the site on his mobile device. My first observation was that the
+            user struggled for a few seconds to decide which post to select. The navigation menu was ignored.
+          </p>
+          <p>After reaching the end of the post that he selected, he was quick to point out that there was no easy way
+            to view another post. The only way was to scroll back to the top and open the blog menu.
+            This made me realize that adding "next" or "back" buttons could hold the key to optimizing the goal
+            completion rate.
           </p>
 
-          <img class="img-fluid" src="img/etsy-homechoices.jpg" alt="Product recommendations on home page, image">
-          <span class="caption">The mobile site omits the Popular items but includes the "Editors' Picks" labels</span>
-          <p>
-            Similar to the desktop browser test, the filter button took a while to find. However, when it was found, it
-            was decently useful to one participant. This participant pressed a "Gas mask card" on task 1 because it was
-            the cheapest, but probably didn't look at the picture or name clearly. The name was largely obscured due to
-            reduced screen real estate. There was also no easy way to filter by face mask.
-          </p>
-          <img class="img-fluid" src="img/gasmaskcard.JPG" alt="Man in Gas Mask as first search result, image">
-          <span class="caption">Interesting how the user can be so focused on filtering their results that they gloss
-            over the image</span>
-          <p>
-            One general observation was that the home button was used much less, with participants more likely to press
-            forward or back arrows to navigate. This makes sense when one considers the longer page lengths. The user is
-            less likely to scroll back to the top to press the logo for home.
-          </p>
-
-          <h2 class="section-heading">Conclusion</h2>
-          <p>
-            Through this round of tests, I was able to observe a few similarities and differences between the desktop
-            and mobile usability. Firstly, I could see that participants were similarly aware of the amount of options,
-            but seemed to be less emotionally affected by them. The filtering features also similarly took a while to
-            find, but when found, they were used more effectively as it replaced the left sidebar on the desktop site.
-            There was less dependence on the home button, but also reduced likelihood of scrolling to the very bottom.
-          </p>
-          <img class="img-fluid" src="img/etsy-filter.JPG" alt="Shirts and Tees category menu, image">
-          <span class="caption">This category menu is surprisingly more useful on mobile</span>
+          <h2 class="section-heading">Review</h2>
           <p>
 
-          <h2 class="section-heading">Suggestion</h2>
+            On the positive side, I noticed that the user deliberately went to the About page after reading the first
+            post. He commented that he didn't understand what he was reading and needed better context. So adding the
+            description did seem to add to the user's desire to read more posts.
+          </p>
+          <img class="img-fluid" src=" alt="">
+          <h2 class="section-heading">Evaluation</h2>
           <p>
-            What I found was that the problems that occurred were largely related to screen real estate. Because
-            products are listed in two columns instead of four, users could focus on the images a little
-            better and therefore navigate more easily using just images. However, this also makes the user a bit less in
-            touch with the hierarchy and
-            feel less in control of the navigation. Improving the experience on mobile won't be easy due to such
-            constraints, but if navigational elements were clarified in a way, I could see how general users can
-            benefit.
+            I've learned a great deal about the differences between content experiment and usability testing in how the
+            data is collected and evaluated. I would think that both can be used effectively in tandem, and either of
+            them could be used based on the situation. The primary lesson that I learned is that direct evidence beats
+            conjecture. The subtle changes in my content experiment, while well-intentioned, was not based on a factual
+            understanding of what would enhance conversions. Instead, it was through the usability test that I learned
+            the real barriers to optimizing the goal conversion.
+            In future, I have decided that usability tests should come before content experiments. Through knowing the
+            precise issues users face, I am better equipped to fix those issues when they are presented. After all, I am
+            serving the user and the user is always the one who will identify roadblocks that I wouldn't otherwise see
+            as the creator. Analytics may be useful for marketing and helping paint a clear picture of business results,
+            but field testing will most likely be far more reliable for user experience purposes.
           </p>
         </div>
       </div>
