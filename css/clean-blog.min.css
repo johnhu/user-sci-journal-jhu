@@ -172,7 +172,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-    margin-bottom: 50px;
+    margin-bottom: 37px;
     background: no-repeat center center;
     background-color: #868e96;
     background-attachment: scroll;
@@ -186,8 +186,8 @@ header.masthead .overlay {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #212529;
-    opacity: .5
+    background-color: #464c52;
+    opacity: .35
 }
 
 header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading {
@@ -252,6 +252,18 @@ header.masthead .post-heading .meta a {
     }
     header.masthead .post-heading .subheading {
         font-size: 30px
+    }
+    header.masthead .site-heading {
+        padding-bottom: 20px
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .post-preview>a>.post-title {
+        text-align: center;
+    }
+    .post-preview>.post-meta {
+        text-align: center;
     }
 }
 
@@ -358,7 +370,7 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 footer {
-    padding: 50px 0 65px
+    padding: 20px 0 65px
 }
 
 footer .list-inline {

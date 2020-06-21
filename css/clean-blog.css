@@ -226,11 +226,14 @@ header.masthead .site-heading .subheading {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
     font-size: 80px;
+    margin-top: 50px;
   }
 }
 
 header.masthead .post-heading h1 {
   font-size: 35px;
+  
+  margin-top: 50px;
 }
 
 header.masthead .post-heading .meta,
